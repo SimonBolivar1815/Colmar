@@ -1,0 +1,154 @@
+
+html{
+  font-size: 16px;
+}
+
+
+
+/*header */
+
+header{
+  display: flex;
+  flex-direction: row;
+  background-color: orange;
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+header .desktop{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .mobile{
+  display: none;
+}
+
+header .left{
+  border: 1px dashed white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+
+header .left img{
+  width: 2.5rem;
+}
+
+header .left h2{
+  font-size: 2rem;
+  color: gray;
+}
+
+header .left h2 strong{
+  font-weight: bold;
+  color: black;
+}
+
+header .right{
+  border: 1px dashed white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1.5rem;
+  justify-content: center;
+}
+
+header .right ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .right ul li{
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+header .right ul li:last-child{
+  margin-right: 0;
+}
+
+header .right ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 850px) {
+  html{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 640px){
+
+  html{
+    font-size: 16px;
+  }
+
+  header .desktop{
+    display: none;
+  }
+
+  header .mobile{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .mobile img{
+    width: 3rem;
+  }
+
+}
+
+
+/* banner */
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.banner .image{
+  display: flex;
+  border: 1px solid black;
+  width: 60%;
+  background-image: url("/Users/joshowen/Documents/coding/Colmar/resources/images/banner.jpg");
+  background-position: center;
+  background-repeat: none;
+  height: inherit;
+  margin: 6rem 1.5rem 2rem 1.5rem;
+}
+
+.banner .text h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.banner .text h2{
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.banner .text button{
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+}
